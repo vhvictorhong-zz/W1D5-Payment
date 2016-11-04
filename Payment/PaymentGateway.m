@@ -12,16 +12,18 @@
 
 -(NSInteger)generateRandomValue {
     
+    //generate random number
     return arc4random_uniform(901) + 100;
     
 }
 
 -(void)processPaymentAmount:(NSInteger)amount {
     
-    NSInteger randomValue = [self generateRandomValue];
+    //call delegate
+    [self.paymentDelegate processPaymentAmount:self.generateRandomValue];
     
     //Test method
-    NSLog(@"process payment: %ld", (long)randomValue);
+    NSLog(@"process payment: %ld", (long)amount);
     
 }
 

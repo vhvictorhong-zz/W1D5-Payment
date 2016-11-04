@@ -10,4 +10,11 @@
 
 @implementation StripePaymentService
 
+-(void)processPaymentAmount:(NSInteger)amount {
+    
+    //Test Stripe payment
+    NSLog(@"Stripe payment");
+    
+}
+
 @end

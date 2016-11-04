@@ -10,4 +10,10 @@
 
 @implementation PaypalPaymentService
 
+-(void)processPaymentAmount:(NSInteger)amount {
+    
+    //Test Paypal payment
+    NSLog(@"Paypal payment");
+}
+
 @end

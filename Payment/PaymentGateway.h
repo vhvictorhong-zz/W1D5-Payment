@@ -16,6 +16,8 @@
 
 @interface PaymentGateway : NSObject
 
+@property (nonatomic, weak) id<PaymentProtocol> paymentDelegate;
+
 -(NSInteger)generateRandomValue;
 -(void)processPaymentAmount:(NSInteger)amount;
 
