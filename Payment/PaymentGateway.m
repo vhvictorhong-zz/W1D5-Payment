@@ -16,7 +16,7 @@
     
 }
 
--(void)processPaymentAmount:(NSInteger)methodNumber {
+-(void)processPaymentAmount:(NSInteger)amount {
     
     NSInteger randomValue = [self generateRandomValue];
     

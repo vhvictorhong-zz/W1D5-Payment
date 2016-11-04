@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol PaymentProtocol <NSObject>
+
+-(void)processPaymentAmount:(NSInteger)amount;
+
+@end
+
 @interface PaymentGateway : NSObject
 
 -(NSInteger)generateRandomValue;
--(void)processPaymentAmount:(NSInteger)methodNumber;
+-(void)processPaymentAmount:(NSInteger)amount;
 
 @end
